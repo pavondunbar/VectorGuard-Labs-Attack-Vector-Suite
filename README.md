@@ -3,218 +3,373 @@
 
 # Comprehensive Attack Vector Inventory (Updated July 2025)
 
-## 🎯 **147 Core Attack Vectors: Covering 85-90% of Real DeFi Hacks**
+## Core Attack Mechanisms
+1. Advanced Flash Loan Actions
+2. MEV Attack Preparation
+3. Cross-Chain Balance Manipulation
+4. L2 Bridge State Manipulation
+5. Cross-Chain Message Processing
+6. Share Price Manipulation
+7. Share-to-Asset Conversion Manipulation
+8. Admin Takeover Scheduling
+9. Configuration Backdoor Updates
+10. Signature Verification Manipulation
+11. Signer Address Manipulation
+12. Fake Merkle Root Setting
+13. Merkle Proof Verification Bypass
+14. Reward Processing Manipulation
+15. Wallet Migration Manipulation
+16. Event Emission Manipulation
+17. Account Abstraction Targeting
+18. Account Execution Manipulation
+19. Uniswap V4 Hook Manipulation
+20. Gas Usage Optimization Exploitation
+21. Honeypot Activation Threshold Manipulation
+22. Cryptographic Operation Manipulation
 
-**Industry Statistics (2020-2024):**
-- **Total DeFi losses:** ~$10+ billion
-- **Attacks covered by these 147 vectors:** ~$8.5-9 billion (85-90%)
-- **Most common attack type:** Reentrancy (25% of hacks)
-- **Highest single-attack losses:** Access control breaches
-- **Fastest growing threat:** Oracle manipulation
+## Cross-Chain Attack Vectors
+23. Cross-Chain Message Replay Attack
+24. Chain ID Confusion Attack
+25. Bridge Double-Spending Attack
+26. Finality Attack
+27. Cross-Chain State Desynchronization
+28. L2 Withdrawal Blocking
+29. Cross-Chain Message Manipulation
+30. Bridge State Manipulation
+31. Cross-Chain Balance Manipulation
+32. Cross-Chain Reentrancy Attack
 
-## NOTE: The Attack Suite covers all 147 core attack vectors.
+## Bridge Exploitation Vectors
+33. Validator Compromise Attack
+34. Mint/Burn Imbalance Attack
+35. Cross-Chain MEV Attack
+36. Wormhole Bridge Attack
+37. Multichain Bridge Attack
+38. Hop Protocol Attack
+39. Synapse Protocol Attack
+40. Across Bridge Attack
 
-## Core Vulnerabilities (147 Vectors)
+## Liquidity Manipulation Vectors
+41. Liquidity Sandwich Attack
+42. Impermanent Loss Exploit
+43. Liquidity Lock Attack
+44. Slippage Manipulation Attack
+45. Advanced Liquidity Manipulation
+46. Liquidity Drain Attack
+47. AMM Pool Manipulation
+48. Curve Pool Manipulation
+49. Balancer Vault Attack
+50. Uniswap V2 Flash Swap Attack
+51. Uniswap V3 Flash Attack
+52. SushiSwap Kashi Attack
+53. Curve Meta Pool Attack
 
-### **Reentrancy Attack Vectors (11 vectors) - 25% of DeFi hacks**
-**Notable Real-World Examples:** The DAO ($60M), bZx ($8M), CREAM Finance ($130M), Fei Protocol ($80M)
+## Flash Loan Attack Vectors
+54. Flash Loan Price Manipulation
+55. Governance Token Flash Loan Attack
+56. Advanced Flash Loan Attack
+57. Multi-Step Flash Loan Governance Attack
+58. Flash Loan Oracle Manipulation
+59. Recursive Flash Loan Attack
+60. Flash Loan Reentrancy Attack
+61. Aave Flash Loan Attack
 
-1. Basic Reentrancy Attack
-2. Cross-Contract Reentrancy Attack
-3. Recursive Reentrancy Attack
-4. Advanced Reentrancy with Flash Loans
-5. Cross-Function Reentrancy
-6. State-Dependent Reentrancy
-7. View Function Reentrancy
-8. Delegated Call Reentrancy
-9. Flash Loan Reentrancy
-10. ERC721 Reentrancy Attack
-11. Cross-Chain Reentrancy Attack
+## Access Control Attack Vectors
+62. Role Escalation Attack
+63. Role Renounce Attack
+64. Role Hierarchy Attack
+65. Role Check Bypass Attack
+66. Multi-Signature Bypass Attack
+67. Admin Takeover Scheduling Attack
+68. Backdoor Role Escalation Attack
+69. Timelock Bypass Attack
+70. Front-Run Role Change Attack
+71. Role Rotation Attack
+72. Time-Based Admin Takeover Attack
+73. Access Control Bypass via Delegate Call
+74. Access Control Bypass via Low-Level Call
+75. Impersonation Attack
+76. tx.origin vs msg.sender Attack
+77. Backdoor Access Attack
+78. Signature-Based Bypass Attack
 
-### **Access Control & Privilege Escalation Attack Vectors (17 vectors) - 20% of DeFi hacks**
-**Notable Real-World Examples:** Poly Network ($600M), BadgerDAO ($120M), Wormhole Bridge ($325M), Nomad Bridge ($190M)
+## Token Swap/MEV Attack Vectors
+79. MEV Arbitrage Attack
+80. Price Manipulation Swap
+81. Malicious Token Swap
+82. Slippage Front-Running Attack
+83. Swap Path Manipulation Attack
+84. AI-Evading Sandwich Attack
+85. Protocol-Specific Uniswap V4 Attack
+86. Sandwich Detection Attack
+87. Front-Running Bot Attack
+88. Arbitrage Bot Exploit
+89. AI-Evading Enhanced Sandwich
 
-12. Role Escalation Attack
-13. Role Renounce Attack
-14. Role Hierarchy Attack
-15. Role Check Bypass Attack
-16. Multi-Signature Bypass Attack
-17. Admin Takeover Scheduling Attack
-18. Backdoor Role Escalation Attack
-19. Timelock Bypass Attack
-20. Front-Run Role Change Attack
-21. Role Rotation Attack
-22. Time-Based Admin Takeover Attack
-23. Access Control Bypass via Delegate Call
-24. Access Control Bypass via Low-Level Call
-25. Impersonation Attack
-26. tx.origin vs msg.sender Attack
-27. Backdoor Access Attack
-28. Signature-Based Bypass Attack
+## Governance Attack Vectors
+90. Governance Function Attack
+91. Timelock Bypass
+92. Enhanced Governance Attack with Flash Loans
+93. Compound Governance Attack
+94. Aragon Voting Attack
+95. DAOstack Proposal Attack
+96. Moloch Ragequit Attack
+97. Snapshot Off-Chain Attack
 
-### **Oracle Manipulation Attack Vectors (9 vectors) - 15% of DeFi hacks**
-**Notable Real-World Examples:** Harvest Finance ($24M), bZx ($8M), Venus Protocol ($200M), Mango Markets ($100M)
+## Signature/Cryptographic Attack Vectors
+98. Signature Replay Attack
+99. Enhanced Signature Manipulation
+100. EIP-1559 Chain ID Manipulation
+101. Advanced Cryptographic Attack
+102. Hash Collision Exploit
+103. Nonce Manipulation Attack
+104. EIP-712 Signature Forgery
+105. Signature Verification Bypass
+106. Merkle Proof Manipulation
 
-29. Randomness Manipulation Attack
-30. Enhanced Randomness Attack
-31. Block Hash Attack
-32. Block Hash Manipulation
-33. Timestamp Manipulation
-34. Time Manipulation Attack
-35. Enhanced Time Attack
-36. Time-Lock Attack
-37. Enhanced Time Manipulation with Admin Features
+## Implementation/Proxy Attack Vectors
+107. Malicious Implementation Attack
+108. Enhanced Implementation Attack
+109. Proxy Upgrade Attack
+110. Enhanced Proxy Attack
+111. Unauthorized Upgrade Attack
 
-### **Flash Loan Attack Vectors (8 vectors) - 12% of DeFi hacks**
-**Notable Real-World Examples:** PancakeBunny ($200M), Venus Protocol ($200M), Cream Finance ($130M), Alpha Finance ($37M)
+## Oracle Manipulation Vectors
+112. Direct Price Manipulation
+113. Flash Loan Oracle Attack
+114. Advanced Oracle Manipulation
+115. Chainlink Oracle Attack
+116. Uniswap TWAP Attack
+117. Tellor Oracle Attack
+118. Band Protocol Attack
+119. DIA DATA Attack
+120. Oracle Price Setting
 
-38. MEV Arbitrage Attack
-39. Sandwich Detection Attack
-40. Front-Running Bot Attack
-41. Arbitrage Bot Exploit
-42. AI-Evading Sandwich Attack
-43. Protocol-Specific Uniswap V4 Attack
-44. AI-Evading Enhanced Sandwich
-45. Cross-Chain MEV Attack
+## Time-Based Attack Vectors
+121. Time Manipulation Attack
+122. Block Hash Attack
+123. Enhanced Time Attack
+124. Timestamp Manipulation
+125. Time-Lock Attack
+126. Block Hash Manipulation
+127. Enhanced Time Manipulation with Admin Features
 
-### **Arithmetic/Mathematical Attack Vectors (9 vectors) - 8% of DeFi hacks**
-**Notable Real-World Examples:** Compound Finance ($90M bad debt), SushiSwap ($3.3M), Various yield farming exploits
+## Arithmetic/Mathematical Attack Vectors
+128. Division by Zero Attack
+129. Integer Overflow Attack
+130. Integer Underflow Attack
+131. Multiplication Overflow Attack
+132. Enhanced Overflow Attack
+133. Precision Loss Attack
+134. Modulo Bias Attack
+135. Enhanced Arithmetic Attack
+136. Share Price Calculation Manipulation
 
-46. Division by Zero Attack
-47. Integer Overflow Attack
-48. Integer Underflow Attack
-49. Multiplication Overflow Attack
-50. Enhanced Overflow Attack
-51. Precision Loss Attack
-52. Modulo Bias Attack
-53. Enhanced Arithmetic Attack
-54. Share Price Calculation Manipulation
+## Reentrancy Attack Vectors
+137. Basic Reentrancy Attack
+138. Cross-Contract Reentrancy Attack
+139. Recursive Reentrancy Attack
+140. Advanced Reentrancy with Flash Loans
+141. Cross-Function Reentrancy
+142. State-Dependent Reentrancy
+143. View Function Reentrancy
+144. Delegated Call Reentrancy
+145. Flash Loan Reentrancy
+146. ERC721 Reentrancy Attack
 
-### **MEV & Sandwich Attack Vectors (8 vectors) - 6% of DeFi hacks**
-**Notable Real-World Examples:** Multiple DEX exploits, Uniswap V2/V3 sandwich attacks, Front-running attacks
+## Gas/Resource Attack Vectors
+147. Gas Limit Attack
+148. Enhanced Gas Griefing Attack
+149. Gas Griefing Attack
+150. Gas Limit Manipulation
+151. Stealth Gas Attack
 
-55. Storage Slot Manipulation
-56. State Desynchronization
-57. Variable Corruption
-58. Stack Overflow Attack
-59. Memory Manipulation Attack
-60. State Corruption via Delegatecall
-61. Cross-Chain State Desynchronization
-62. L2 Bridge State Manipulation
+## Event/History Manipulation Vectors
+152. Fake Transaction History Creation
+153. Advanced Event Manipulation
+154. Event Emission Attack
+155. Enhanced Event Manipulation Attack
 
-### **Cross-Chain & Bridge Attack Vectors (8 vectors) - 4% of DeFi hacks**
-**Notable Real-World Examples:** Poly Network ($600M), Wormhole ($325M), Nomad ($190M), Ronin Bridge ($625M)
+## Constructor/Initialization Vectors
+156. Constructor Initialization Attack
+157. Enhanced Initialization Attack
 
-63. Gas Limit Attack
-64. Enhanced Gas Griefing Attack
-65. Gas Griefing Attack
-66. Gas Limit Manipulation
-67. Stealth Gas Attack
-68. Gas Usage Optimization Exploitation
-69. External Call Reentrancy
-70. Callback Function Exploitation
+## Function/Selector Attack Vectors
+158. Function Selector Attack
+159. Enhanced Function Selector Attack
 
-### **External Calls Attack Vectors (8 vectors)**
-71. Unprotected Function Attack
-72. Unchecked External Call Attack
-73. Low-Level Call Manipulation
-74. Delegatecall Storage Attack
-75. Enhanced Delegatecall Attack
-76. Cross-Contract State Corruption
-77. Constructor Initialization Attack
-78. Enhanced Initialization Attack
+## Deployment Attack Vectors
+160. CREATE2 Deployment Attack
+161. Enhanced CREATE2 Attack
+162. CREATE2 Self-Destruct Attack
+163. Enhanced CREATE2 Self-Destruct
 
-### **Logic Attack Vectors (20 vectors)**
-79. Function Selector Attack
-80. Enhanced Function Selector Attack
-81. CREATE2 Deployment Attack
-82. Enhanced CREATE2 Attack
-83. CREATE2 Self-Destruct Attack
-84. Enhanced CREATE2 Self-Destruct
-85. Calldata Manipulation Attack
-86. Enhanced Calldata Attack
-87. Calldata Length Attack
-88. Enhanced Length Attack
-89. Bytecode Injection Attack
-90. Enhanced Bytecode Injection
-91. Bytecode Hash Attack
-92. Enhanced Hash Attack
-93. Opcode Manipulation Attack
-94. Enhanced Opcode Attack
-95. Self-Destruct Attack
-96. Enhanced Self-Destruct Attack
+## Calldata/Memory Attack Vectors
+164. Calldata Manipulation Attack
+165. Enhanced Calldata Attack
+166. Calldata Length Attack
+167. Enhanced Length Attack
+168. Memory Manipulation Attack
 
-### **String Validation Attack Vectors (7 vectors)**
-97. Empty String Validation Bypass
-98. Null Character Injection
-99. Unicode Normalization Attack
-100. String Length Overflow Attack
-101. Control Character Injection
-102. Case Sensitivity Bypass
-103. String Encoding Manipulation
+## Bytecode Attack Vectors
+169. Bytecode Injection Attack
+170. Enhanced Bytecode Injection
+171. Bytecode Hash Attack
+172. Enhanced Hash Attack
+173. Opcode Manipulation Attack
+174. Enhanced Opcode Attack
 
-### **Systematic Edge Case Attack Vectors (6 vectors)**
-104. Boundary Value Analysis Attack
-105. State Transition Edge Cases
-106. Data Type Edge Cases
-107. Array Edge Cases
-108. Parameter Combination Attack
-109. Error Condition Edge Cases
+## State Corruption Vectors
+175. Storage Slot Manipulation
+176. State Desynchronization
+177. Variable Corruption
+178. Stack Overflow Attack
+179. Delegatecall Storage Attack
+180. Enhanced Delegatecall Attack
 
-### **Enhanced Upgrade Edge Case Vectors (6 vectors)**
-110. Storage Collision During Upgrade
-111. Function Signature Collision
-112. Initialization Replay Attack
-113. Storage Gap Manipulation
-114. Version Rollback Attack
-115. Multi-Step Upgrade Race Condition
+## Self-Destruct Attack Vectors
+181. Self-Destruct Attack
+182. Enhanced Self-Destruct Attack
 
-### **Enhanced Oracle Edge Case Vectors (6 vectors)**
-116. Oracle Staleness Exploitation
-117. Price Deviation Threshold Bypass
-118. Oracle Circuit Breaker Bypass
-119. Multi-Oracle Inconsistency
-120. Oracle Round Manipulation
-121. Heartbeat Failure Exploitation
+## Layer 2 Specific Vectors
+183. Optimism Fraud Proof Attack
+184. Arbitrum Delayed Inbox Attack
+185. Polygon Checkpoint Attack
+186. StarkNet L1-L2 Message Attack
+187. zkSync Commit Block Attack
+188. Rollup Fraud Proof Manipulation
+189. Enhanced Fraud Proof Attack
 
-### **Contract State Extreme Vectors (6 vectors)**
-122. State Variable Overflow Cascade
-123. Mapping Collision Attack
-124. Struct Corruption Attack
-125. Array Out of Bounds State Corruption
-126. State Machine Deadlock
-127. Memory-Storage Confusion
+## DeFi Protocol Specific Vectors
+190. Compound Borrow Attack
+191. Yearn Vault Attack
+192. Synthetix Debt Pool Attack
+193. Convex Reward Attack
+194. MakerDAO CDP Attack
+195. Liquity Trove Attack
+196. Reflexer SAFE Attack
+197. Alpaca Finance Attack
 
-### **Balance Edge Case Vectors (6 vectors)**
-128. Zero Balance Exploitation
-129. Balance Underflow Wrap-Around
-130. Dust Balance Accumulation
-131. Balance Precision Loss Attack
-132. Negative Balance Simulation
-133. Multi-Token Balance Confusion
+## NFT Attack Vectors
+198. ERC1155 Batch Attack
+199. NFT Royalty Bypass Attack
+200. OpenSea Wyvern Attack
+201. Rarible Royalty Attack
 
-### **Invariant Testing Vectors (4 vectors)**
-134. Total Supply Invariant Violation
-135. Balance Sum Invariant Violation
-136. Access Control Invariant Violation
-137. State Machine Invariant Violation
+## Staking Attack Vectors
+202. ETH2 Validator Attack
+203. Lido Staking Attack
+204. RocketPool Node Attack
+205. StakeWise Pool Attack
+206. Frax ETH Minting Attack
 
-### **Fork Testing Vectors (3 vectors)**
-138. Historical State Manipulation
-139. Fork Block Hash Manipulation
-140. Cross-Fork State Inconsistency
+## Yield Farming Vectors
+207. MasterChef Attack
+208. PancakeSwap Farm Attack
+209. SpiritSwap Farm Attack
+210. QuickSwap Farm Attack
+211. Tomb Finance Attack
 
-### **Snapshot Testing Vectors (3 vectors)**
-141. Snapshot State Manipulation
-142. Snapshot Timing Attack
-143. Snapshot Gas Optimization Exploitation
+## Insurance Protocol Vectors
+212. Nexus Mutual Attack
+213. Cover Protocol Attack
+214. InsurAce Attack
+215. Unslashed Finance Attack
+216. Bright Union Attack
 
-### **Unit Testing Attack Vectors (4 vectors)**
-144. Test Isolation Violation
-145. Mock Dependency Manipulation
-146. Test Data Corruption
-147. Assertion Bypass
+## Options Protocol Vectors
+217. Hegic Options Attack
+218. Opyn Gamma Attack
+219. Premia 2.0 Attack
+220. Dopex Options Attack
+221. Lyra Options Attack
 
-## Summary
+## Mining Pool Vectors
+222. EtherMine Attack
+223. F2Pool Attack
+224. SparkPool Attack
+225. FlexPool Attack
+226. NanoPool Attack
 
-This comprehensive attack vector list covers **147 core attack vectors** that represent the most critical vulnerabilities in smart contracts.
+## Token Vesting Vectors
+227. Linear Vesting Attack
+228. Merkle Vesting Attack
+229. Time-Locked Vesting Attack
+230. Sablier Stream Attack
+231. LlamaPay Stream Attack
+
+## Perpetual Protocol Vectors
+232. Perpetual V1 Attack
+233. Perpetual V2 Attack
+234. dYdX Perpetual Attack
+235. GMX Perpetual Attack
+236. Gains Perpetual Attack
+
+## Identity/Naming Vectors
+237. ENS Attack
+238. Unstoppable Domains Attack
+239. BrightID Attack
+240. Civic Identity Attack
+241. Proof of Humanity Attack
+
+## Advanced/Compound Vectors
+242. Multi-Vector Simultaneous Attack
+243. Cascading Failure Attack
+244. System-Wide Corruption Attack
+245. Emergency Drain Attack
+246. Governance Emergency Attack
+247. Randomized Attack Pattern
+248. Phased Attack Execution
+249. Targeted Attack Sequences
+250. Complete Attack Suite Execution
+
+## Honeypot Mechanism Vectors
+251. Honeypot Activation Trigger
+252. Sell Blocking Attack
+253. Liquidity Trap Attack
+254. Progressive Tax Attack
+255. Exit Prevention Attack
+
+## Specialized Token Vectors
+256. Fee-on-Transfer Token Manipulation
+257. Rebasing Token Manipulation
+258. Pausable Token Attack
+259. Blacklist Token Attack
+260. Deflationary Token Attack
+261. Non-Standard Token Attack
+
+## Poison/Vanity Contract Vectors
+262. Poison Contract Fake History
+263. Vanity Address Manipulation
+264. Advanced Vanity Contract Attack
+
+## VM/ZK Proof Vectors
+265. ZK Proof Manipulation
+266. Enhanced ZK Proof Manipulation
+267. Prover Compromise Attack
+268. Enhanced Prover Compromise
+269. VM Instruction Exploitation
+270. Enhanced VM Exploit
+271. State Transition Manipulation
+272. Enhanced State Transition Attack
+
+## Asset Lock/Bridge Vectors
+273. Asset Lock Exploit
+274. Enhanced Asset Lock Exploit
+275. Bridge Exploit
+276. Enhanced Bridge Exploit
+
+## Distraction/Stealth Vectors
+277. Distraction Attack
+278. Complex Distraction Attack
+279. Enhanced Distraction Attack
+
+## Randomness/Entropy Vectors
+280. Randomness Manipulation Attack
+281. Enhanced Randomness Attack
+
+## Emergency/Orchestration Vectors
+282. Ultimate Attack Orchestration
+283. Complete Attack Suite
+284. Emergency Vector Execution
+285. Comprehensive Attack Framework
