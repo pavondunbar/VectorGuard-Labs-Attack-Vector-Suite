@@ -73,29 +73,96 @@
 | Honeypot Activation Threshold Manipulation | 🟡 High | Honeypot trigger manipulation |
 | Cryptographic Operation Manipulation | 🟡 High | Cryptographic primitive attacks |
 
-## **Advanced Flash Loan & MEV Vectors**
+## **Access Control Attack Vectors**
 
 | Vector | Severity | Description |
 |--------|----------|-------------|
-| Flash Loan Price Manipulation | 🔴 Critical | Price manipulation via flash loans |
-| Governance Token Flash Loan Attack | 🔴 Critical | Governance exploitation via flash loans |
-| Advanced Flash Loan Attack | 🔴 Critical | Multi-step flash loan exploitation |
-| Multi-Step Flash Loan Governance Attack | 🔴 Critical | Complex governance + flash loan attacks |
-| Flash Loan Oracle Manipulation | 🔴 Critical | Oracle manipulation with flash loans |
-| Recursive Flash Loan Attack | 🔴 Critical | Nested flash loan exploitation |
-| Flash Loan Reentrancy Attack | 🔴 Critical | Flash loan + reentrancy combination |
-| Aave Flash Loan Attack | 🔴 Critical | Aave-specific flash loan exploitation |
-| MEV Arbitrage Attack | 🔴 Critical | Maximal extractable value arbitrage |
-| Price Manipulation Swap | 🔴 Critical | Price manipulation through swaps |
-| Malicious Token Swap | 🟡 High | Malicious token in swap operations |
-| Slippage Front-Running Attack | 🟡 High | Front-running with slippage exploitation |
-| Swap Path Manipulation Attack | 🟡 High | Manipulation of swap routing |
-| AI-Evading Sandwich Attack | 🟡 High | Anti-detection sandwich attacks |
-| Protocol-Specific Uniswap V4 Attack | 🔴 Critical | Uniswap V4 specific exploits |
-| Sandwich Detection Attack | 🟡 High | Anti-sandwich mechanism bypass |
-| Front-Running Bot Attack | 🟡 High | Automated front-running |
-| Arbitrage Bot Exploit | 🟡 High | Cross-protocol arbitrage bots |
-| AI-Evading Enhanced Sandwich | 🟡 High | Advanced sandwich evasion |
+| Role Escalation Attack | 🔴 Critical | Unauthorized privilege elevation |
+| Role Renounce Attack | 🟡 High | Malicious role renunciation |
+| Role Hierarchy Attack | 🟡 High | Role hierarchy exploitation |
+| Role Check Bypass Attack | 🔴 Critical | Role validation bypass |
+| Multi-Signature Bypass Attack | 🔴 Critical | Multi-sig protection bypass |
+| Admin Takeover Scheduling Attack | 🔴 Critical | Scheduled admin takeover |
+| Backdoor Role Escalation Attack | 🔴 Critical | Hidden privilege escalation |
+| Timelock Bypass Attack | 🔴 Critical | Timelock protection bypass |
+| Front-Run Role Change Attack | 🟡 High | Front-running role changes |
+| Role Rotation Attack | 🟡 High | Role rotation exploitation |
+| Time-Based Admin Takeover Attack | 🔴 Critical | Time-dependent admin attacks |
+| Access Control Bypass via Delegate Call | 🔴 Critical | Delegatecall bypass |
+| Access Control Bypass via Low-Level Call | 🟡 High | Low-level call bypass |
+| Impersonation Attack | 🔴 Critical | Identity impersonation |
+| tx.origin vs msg.sender Attack | 🟡 High | Transaction origin confusion |
+| Backdoor Access Attack | 🔴 Critical | Hidden access mechanisms |
+| Signature-Based Bypass Attack | 🟡 High | Signature verification bypass |
+
+## **Arithmetic/Mathematical Attack Vectors**
+
+| Vector | Severity | Description |
+|--------|----------|-------------|
+| Division by Zero Attack | 🟡 High | Zero division exploitation |
+| Integer Overflow Attack | 🔴 Critical | Integer overflow exploitation |
+| Integer Underflow Attack | 🔴 Critical | Integer underflow exploitation |
+| Multiplication Overflow Attack | 🔴 Critical | Multiplication overflow |
+| Enhanced Overflow Attack | 🔴 Critical | Advanced overflow techniques |
+| Precision Loss Attack | 🟡 High | Rounding error exploitation |
+| Modulo Bias Attack | 🟠 Medium | Modulo operation bias |
+| Enhanced Arithmetic Attack | 🟡 High | Complex arithmetic exploitation |
+| Share Price Calculation Manipulation | 🔴 Critical | Share price manipulation |
+
+## **Reentrancy Attack Vectors**
+
+| Vector | Severity | Description |
+|--------|----------|-------------|
+| Basic Reentrancy Attack | 🔴 Critical | Classic reentrancy exploitation |
+| Cross-Contract Reentrancy Attack | 🔴 Critical | Inter-contract reentrancy |
+| Recursive Reentrancy Attack | 🔴 Critical | Deep recursive exploitation |
+| Advanced Reentrancy with Flash Loans | 🔴 Critical | Flash loan + reentrancy |
+| Cross-Function Reentrancy | 🔴 Critical | Function-to-function reentrancy |
+| State-Dependent Reentrancy | 🟡 High | State-based reentrancy |
+| View Function Reentrancy | 🟠 Medium | View function exploitation |
+| Delegated Call Reentrancy | 🔴 Critical | Delegatecall reentrancy |
+| Flash Loan Reentrancy | 🔴 Critical | Flash loan reentrancy combo |
+| ERC721 Reentrancy Attack | 🟡 High | NFT-specific reentrancy |
+
+## **State Corruption & Logic Vectors**
+
+| Vector | Severity | Description |
+|--------|----------|-------------|
+| Storage Slot Manipulation | 🔴 Critical | Direct storage manipulation |
+| State Desynchronization | 🔴 Critical | State inconsistency exploitation |
+| Variable Corruption | 🟡 High | State variable corruption |
+| Stack Overflow Attack | 🟡 High | Call stack overflow |
+| Delegatecall Storage Attack | 🔴 Critical | Delegatecall storage corruption |
+| Enhanced Delegatecall Attack | 🔴 Critical | Advanced delegatecall exploitation |
+| Self-Destruct Attack | 🔴 Critical | Contract destruction exploitation |
+| Enhanced Self-Destruct Attack | 🔴 Critical | Advanced destruction techniques |
+| Function Selector Attack | 🟡 High | Function selector collision |
+| Enhanced Function Selector Attack | 🟡 High | Advanced selector attacks |
+| CREATE2 Deployment Attack | 🟡 High | CREATE2 exploitation |
+| Enhanced CREATE2 Attack | 🟡 High | Advanced CREATE2 attacks |
+| CREATE2 Self-Destruct Attack | 🔴 Critical | CREATE2 + self-destruct |
+| Enhanced CREATE2 Self-Destruct | 🔴 Critical | Advanced destruction attacks |
+| Calldata Manipulation Attack | 🟡 High | Calldata exploitation |
+| Enhanced Calldata Attack | 🟡 High | Advanced calldata attacks |
+| Calldata Length Attack | 🟠 Medium | Calldata length exploitation |
+| Enhanced Length Attack | 🟠 Medium | Advanced length attacks |
+| Memory Manipulation Attack | 🟡 High | Memory corruption exploitation |
+| Bytecode Injection Attack | 🔴 Critical | Runtime bytecode injection |
+| Enhanced Bytecode Injection | 🔴 Critical | Advanced bytecode attacks |
+| Bytecode Hash Attack | 🟡 High | Bytecode hash manipulation |
+| Enhanced Hash Attack | 🟡 High | Advanced hash attacks |
+| Opcode Manipulation Attack | 🔴 Critical | Low-level opcode exploitation |
+| Enhanced Opcode Attack | 🔴 Critical | Advanced opcode manipulation |
+
+## **Gas/Resource Attack Vectors**
+
+| Vector | Severity | Description |
+|--------|----------|-------------|
+| Gas Limit Attack | 🟡 High | Gas limit exploitation |
+| Enhanced Gas Griefing Attack | 🟡 High | Advanced gas griefing |
+| Gas Griefing Attack | 🟠 Medium | Basic gas griefing |
+| Gas Limit Manipulation | 🟡 High | Gas boundary attacks |
+| Stealth Gas Attack | 🟡 High | Hidden gas consumption |
 
 ## **Cross-Chain & Bridge Attack Vectors**
 
@@ -137,55 +204,29 @@
 | SushiSwap Kashi Attack | 🔴 Critical | SushiSwap Kashi exploitation |
 | Curve Meta Pool Attack | 🔴 Critical | Curve meta pool attacks |
 
-## **Access Control Attack Vectors**
+## **Advanced Flash Loan & MEV Vectors**
 
 | Vector | Severity | Description |
 |--------|----------|-------------|
-| Role Escalation Attack | 🔴 Critical | Unauthorized privilege elevation |
-| Role Renounce Attack | 🟡 High | Malicious role renunciation |
-| Role Hierarchy Attack | 🟡 High | Role hierarchy exploitation |
-| Role Check Bypass Attack | 🔴 Critical | Role validation bypass |
-| Multi-Signature Bypass Attack | 🔴 Critical | Multi-sig protection bypass |
-| Admin Takeover Scheduling Attack | 🔴 Critical | Scheduled admin takeover |
-| Backdoor Role Escalation Attack | 🔴 Critical | Hidden privilege escalation |
-| Timelock Bypass Attack | 🔴 Critical | Timelock protection bypass |
-| Front-Run Role Change Attack | 🟡 High | Front-running role changes |
-| Role Rotation Attack | 🟡 High | Role rotation exploitation |
-| Time-Based Admin Takeover Attack | 🔴 Critical | Time-dependent admin attacks |
-| Access Control Bypass via Delegate Call | 🔴 Critical | Delegatecall bypass |
-| Access Control Bypass via Low-Level Call | 🟡 High | Low-level call bypass |
-| Impersonation Attack | 🔴 Critical | Identity impersonation |
-| tx.origin vs msg.sender Attack | 🟡 High | Transaction origin confusion |
-| Backdoor Access Attack | 🔴 Critical | Hidden access mechanisms |
-| Signature-Based Bypass Attack | 🟡 High | Signature verification bypass |
-
-## **AI-Assisted Attack Vectors (NEW)**
-
-| Vector | Severity | Description |
-|--------|----------|-------------|
-| AI-Powered MEV Optimization Attack | 🟡 High | Machine learning MEV extraction ($5M+ potential) |
-| Machine Learning Arbitrage Prediction Attack | 🟡 High | Predictive arbitrage algorithms ($3M+ potential) |
-| AI Coordination Between Multiple Bot Networks | 🔴 Critical | Coordinated multi-bot attacks ($50M+ potential) |
-| Neural Network Oracle Prediction Manipulation | 🟡 High | AI-driven oracle gaming ($8M+ potential) |
-| Automated Multi-Vector Attack Coordination | 🔴 Critical | AI combining multiple exploit types ($100M+ potential) |
-| AI-Enhanced Multi-Pool Route Optimization | 🟠 Medium | Optimized cross-pool exploitation ($500K+ potential) |
-| Machine Learning Gas Market Manipulation | 🟠 Medium | AI gas price manipulation ($300K+ potential) |
-| AI-Driven Cross-Protocol Strategy Coordination | 🔴 Critical | Cross-protocol cascade attacks ($200M+ potential) |
-
-## **Layer 2 & Rollup Attack Vectors (NEW)**
-
-| Vector | Severity | Description |
-|--------|----------|-------------|
-| Sequencer Manipulation Attack | 🔴 Critical | L2 transaction ordering control ($50M+ potential) |
-| Rollup State Root Manipulation | 🔴 Critical | Corrupt L2 state transitions ($100M+ potential) |
-| Optimistic Rollup Challenge Period Abuse | 🟡 High | Fraudulent challenge exploitation ($5M+ potential) |
-| ZK-Rollup Proof Manipulation | 🟡 High | Invalid zero-knowledge proofs ($8M+ potential) |
-| L2 Fee Market Manipulation | 🟡 High | L2 fee structure exploitation ($2M+ potential) |
-| Cross-Layer MEV Extraction | 🔴 Critical | MEV across L1/L2 boundaries ($25M+ potential) |
-| Rollup Finality Delay Exploitation | 🔴 Critical | Delayed finality double-spend ($50M+ potential) |
-| State Channel Force-Close Attack | 🔴 Critical | Malicious channel closure ($10M+ potential) |
-| Rollup Data Availability Attack | 🔴 Critical | Data withholding attacks ($100M+ potential) |
-| Cross-Layer Liquidity Fragmentation Exploit | 🔴 Critical | System-wide liquidity crisis ($200M+ potential) |
+| Flash Loan Price Manipulation | 🔴 Critical | Price manipulation via flash loans |
+| Governance Token Flash Loan Attack | 🔴 Critical | Governance exploitation via flash loans |
+| Advanced Flash Loan Attack | 🔴 Critical | Multi-step flash loan exploitation |
+| Multi-Step Flash Loan Governance Attack | 🔴 Critical | Complex governance + flash loan attacks |
+| Flash Loan Oracle Manipulation | 🔴 Critical | Oracle manipulation with flash loans |
+| Recursive Flash Loan Attack | 🔴 Critical | Nested flash loan exploitation |
+| Flash Loan Reentrancy Attack | 🔴 Critical | Flash loan + reentrancy combination |
+| Aave Flash Loan Attack | 🔴 Critical | Aave-specific flash loan exploitation |
+| MEV Arbitrage Attack | 🔴 Critical | Maximal extractable value arbitrage |
+| Price Manipulation Swap | 🔴 Critical | Price manipulation through swaps |
+| Malicious Token Swap | 🟡 High | Malicious token in swap operations |
+| Slippage Front-Running Attack | 🟡 High | Front-running with slippage exploitation |
+| Swap Path Manipulation Attack | 🟡 High | Manipulation of swap routing |
+| AI-Evading Sandwich Attack | 🟡 High | Anti-detection sandwich attacks |
+| Protocol-Specific Uniswap V4 Attack | 🔴 Critical | Uniswap V4 specific exploits |
+| Sandwich Detection Attack | 🟡 High | Anti-sandwich mechanism bypass |
+| Front-Running Bot Attack | 🟡 High | Automated front-running |
+| Arbitrage Bot Exploit | 🟡 High | Cross-protocol arbitrage bots |
+| AI-Evading Enhanced Sandwich | 🟡 High | Advanced sandwich evasion |
 
 ## **Governance Attack Vectors**
 
@@ -214,34 +255,55 @@
 | DIA DATA Attack | 🟡 High | DIA oracle exploitation |
 | Oracle Price Setting | 🔴 Critical | Oracle price setting manipulation |
 
-## **Arithmetic/Mathematical Attack Vectors**
+## **DeFi Protocol Specific Vectors**
 
 | Vector | Severity | Description |
 |--------|----------|-------------|
-| Division by Zero Attack | 🟡 High | Zero division exploitation |
-| Integer Overflow Attack | 🔴 Critical | Integer overflow exploitation |
-| Integer Underflow Attack | 🔴 Critical | Integer underflow exploitation |
-| Multiplication Overflow Attack | 🔴 Critical | Multiplication overflow |
-| Enhanced Overflow Attack | 🔴 Critical | Advanced overflow techniques |
-| Precision Loss Attack | 🟡 High | Rounding error exploitation |
-| Modulo Bias Attack | 🟠 Medium | Modulo operation bias |
-| Enhanced Arithmetic Attack | 🟡 High | Complex arithmetic exploitation |
-| Share Price Calculation Manipulation | 🔴 Critical | Share price manipulation |
+| Compound Borrow Attack | 🔴 Critical | Compound lending exploitation |
+| Yearn Vault Attack | 🔴 Critical | Yearn vault manipulation |
+| Synthetix Debt Pool Attack | 🔴 Critical | Synthetix debt exploitation |
+| Convex Reward Attack | 🟡 High | Convex reward manipulation |
+| MakerDAO CDP Attack | 🔴 Critical | MakerDAO CDP exploitation |
+| Liquity Trove Attack | 🔴 Critical | Liquity trove manipulation |
+| Reflexer SAFE Attack | 🟡 High | Reflexer SAFE exploitation |
+| Alpaca Finance Attack | 🟡 High | Alpaca protocol attacks |
 
-## **Reentrancy Attack Vectors**
+## **NFT Attack Vectors**
 
 | Vector | Severity | Description |
 |--------|----------|-------------|
-| Basic Reentrancy Attack | 🔴 Critical | Classic reentrancy exploitation |
-| Cross-Contract Reentrancy Attack | 🔴 Critical | Inter-contract reentrancy |
-| Recursive Reentrancy Attack | 🔴 Critical | Deep recursive exploitation |
-| Advanced Reentrancy with Flash Loans | 🔴 Critical | Flash loan + reentrancy |
-| Cross-Function Reentrancy | 🔴 Critical | Function-to-function reentrancy |
-| State-Dependent Reentrancy | 🟡 High | State-based reentrancy |
-| View Function Reentrancy | 🟠 Medium | View function exploitation |
-| Delegated Call Reentrancy | 🔴 Critical | Delegatecall reentrancy |
-| Flash Loan Reentrancy | 🔴 Critical | Flash loan reentrancy combo |
-| ERC721 Reentrancy Attack | 🟡 High | NFT-specific reentrancy |
+| ERC1155 Batch Attack | 🟡 High | ERC1155 batch operation exploitation |
+| NFT Royalty Bypass Attack | 🟡 High | Royalty circumvention |
+| OpenSea Wyvern Attack | 🟡 High | OpenSea marketplace exploitation |
+| Rarible Royalty Attack | 🟡 High | Rarible royalty bypass |
+
+## **AI-Assisted Attack Vectors (NEW)**
+
+| Vector | Severity | Description |
+|--------|----------|-------------|
+| AI-Powered MEV Optimization Attack | 🟡 High | Machine learning MEV extraction ($5M+ potential) |
+| Machine Learning Arbitrage Prediction Attack | 🟡 High | Predictive arbitrage algorithms ($3M+ potential) |
+| AI Coordination Between Multiple Bot Networks | 🔴 Critical | Coordinated multi-bot attacks ($50M+ potential) |
+| Neural Network Oracle Prediction Manipulation | 🟡 High | AI-driven oracle gaming ($8M+ potential) |
+| Automated Multi-Vector Attack Coordination | 🔴 Critical | AI combining multiple exploit types ($100M+ potential) |
+| AI-Enhanced Multi-Pool Route Optimization | 🟠 Medium | Optimized cross-pool exploitation ($500K+ potential) |
+| Machine Learning Gas Market Manipulation | 🟠 Medium | AI gas price manipulation ($300K+ potential) |
+| AI-Driven Cross-Protocol Strategy Coordination | 🔴 Critical | Cross-protocol cascade attacks ($200M+ potential) |
+
+## **Layer 2 & Rollup Attack Vectors (NEW)**
+
+| Vector | Severity | Description |
+|--------|----------|-------------|
+| Sequencer Manipulation Attack | 🔴 Critical | L2 transaction ordering control ($50M+ potential) |
+| Rollup State Root Manipulation | 🔴 Critical | Corrupt L2 state transitions ($100M+ potential) |
+| Optimistic Rollup Challenge Period Abuse | 🟡 High | Fraudulent challenge exploitation ($5M+ potential) |
+| ZK-Rollup Proof Manipulation | 🟡 High | Invalid zero-knowledge proofs ($8M+ potential) |
+| L2 Fee Market Manipulation | 🟡 High | L2 fee structure exploitation ($2M+ potential) |
+| Cross-Layer MEV Extraction | 🔴 Critical | MEV across L1/L2 boundaries ($25M+ potential) |
+| Rollup Finality Delay Exploitation | 🔴 Critical | Delayed finality double-spend ($50M+ potential) |
+| State Channel Force-Close Attack | 🔴 Critical | Malicious channel closure ($10M+ potential) |
+| Rollup Data Availability Attack | 🔴 Critical | Data withholding attacks ($100M+ potential) |
+| Cross-Layer Liquidity Fragmentation Exploit | 🔴 Critical | System-wide liquidity crisis ($200M+ potential) |
 
 ## **Intent-Based & Account Abstraction Attack Vectors (NEW)**
 
@@ -303,71 +365,10 @@
 | Anonymous Voting Manipulation | 🟠 Medium | Anonymous vote attacks ($200K+ potential) |
 | ZK-SNARK Trusted Setup Exploitation | 🟢 Low | Trusted setup attacks (theoretical) |
 
-## **DeFi Protocol Specific Vectors**
-
-| Vector | Severity | Description |
-|--------|----------|-------------|
-| Compound Borrow Attack | 🔴 Critical | Compound lending exploitation |
-| Yearn Vault Attack | 🔴 Critical | Yearn vault manipulation |
-| Synthetix Debt Pool Attack | 🔴 Critical | Synthetix debt exploitation |
-| Convex Reward Attack | 🟡 High | Convex reward manipulation |
-| MakerDAO CDP Attack | 🔴 Critical | MakerDAO CDP exploitation |
-| Liquity Trove Attack | 🔴 Critical | Liquity trove manipulation |
-| Reflexer SAFE Attack | 🟡 High | Reflexer SAFE exploitation |
-| Alpaca Finance Attack | 🟡 High | Alpaca protocol attacks |
-
-## **NFT Attack Vectors**
-
-| Vector | Severity | Description |
-|--------|----------|-------------|
-| ERC1155 Batch Attack | 🟡 High | ERC1155 batch operation exploitation |
-| NFT Royalty Bypass Attack | 🟡 High | Royalty circumvention |
-| OpenSea Wyvern Attack | 🟡 High | OpenSea marketplace exploitation |
-| Rarible Royalty Attack | 🟡 High | Rarible royalty bypass |
-
-## **Gas/Resource Attack Vectors**
-
-| Vector | Severity | Description |
-|--------|----------|-------------|
-| Gas Limit Attack | 🟡 High | Gas limit exploitation |
-| Enhanced Gas Griefing Attack | 🟡 High | Advanced gas griefing |
-| Gas Griefing Attack | 🟠 Medium | Basic gas griefing |
-| Gas Limit Manipulation | 🟡 High | Gas boundary attacks |
-| Stealth Gas Attack | 🟡 High | Hidden gas consumption |
-
-## **State Corruption & Logic Vectors**
-
-| Vector | Severity | Description |
-|--------|----------|-------------|
-| Storage Slot Manipulation | 🔴 Critical | Direct storage manipulation |
-| State Desynchronization | 🔴 Critical | State inconsistency exploitation |
-| Variable Corruption | 🟡 High | State variable corruption |
-| Stack Overflow Attack | 🟡 High | Call stack overflow |
-| Delegatecall Storage Attack | 🔴 Critical | Delegatecall storage corruption |
-| Enhanced Delegatecall Attack | 🔴 Critical | Advanced delegatecall exploitation |
-| Self-Destruct Attack | 🔴 Critical | Contract destruction exploitation |
-| Enhanced Self-Destruct Attack | 🔴 Critical | Advanced destruction techniques |
-| Function Selector Attack | 🟡 High | Function selector collision |
-| Enhanced Function Selector Attack | 🟡 High | Advanced selector attacks |
-| CREATE2 Deployment Attack | 🟡 High | CREATE2 exploitation |
-| Enhanced CREATE2 Attack | 🟡 High | Advanced CREATE2 attacks |
-| CREATE2 Self-Destruct Attack | 🔴 Critical | CREATE2 + self-destruct |
-| Enhanced CREATE2 Self-Destruct | 🔴 Critical | Advanced destruction attacks |
-| Calldata Manipulation Attack | 🟡 High | Calldata exploitation |
-| Enhanced Calldata Attack | 🟡 High | Advanced calldata attacks |
-| Calldata Length Attack | 🟠 Medium | Calldata length exploitation |
-| Enhanced Length Attack | 🟠 Medium | Advanced length attacks |
-| Memory Manipulation Attack | 🟡 High | Memory corruption exploitation |
-| Bytecode Injection Attack | 🔴 Critical | Runtime bytecode injection |
-| Enhanced Bytecode Injection | 🔴 Critical | Advanced bytecode attacks |
-| Bytecode Hash Attack | 🟡 High | Bytecode hash manipulation |
-| Enhanced Hash Attack | 🟡 High | Advanced hash attacks |
-| Opcode Manipulation Attack | 🔴 Critical | Low-level opcode exploitation |
-| Enhanced Opcode Attack | 🔴 Critical | Advanced opcode manipulation |
-
 ## **Specialized Protocol Vectors**
 
 ### **Staking Vectors**
+
 | Vector | Severity | Description |
 |--------|----------|-------------|
 | ETH2 Validator Attack | 🔴 Critical | Ethereum 2.0 validator exploitation |
@@ -377,6 +378,7 @@
 | Frax ETH Minting Attack | 🟡 High | Frax ETH exploitation |
 
 ### **Yield Farming Vectors**
+
 | Vector | Severity | Description |
 |--------|----------|-------------|
 | MasterChef Attack | 🔴 Critical | MasterChef contract exploitation |
@@ -386,6 +388,7 @@
 | Tomb Finance Attack | 🔴 Critical | Tomb Finance protocol attacks |
 
 ### **Insurance Protocol Vectors**
+
 | Vector | Severity | Description |
 |--------|----------|-------------|
 | Nexus Mutual Attack | 🔴 Critical | Nexus Mutual exploitation |
@@ -395,6 +398,7 @@
 | Bright Union Attack | 🟡 High | Bright Union exploitation |
 
 ### **Options Protocol Vectors**
+
 | Vector | Severity | Description |
 |--------|----------|-------------|
 | Hegic Options Attack | 🟡 High | Hegic options exploitation |
@@ -404,6 +408,7 @@
 | Lyra Options Attack | 🟡 High | Lyra options attacks |
 
 ### **Perpetual Protocol Vectors**
+
 | Vector | Severity | Description |
 |--------|----------|-------------|
 | Perpetual V1 Attack | 🔴 Critical | Perpetual V1 exploitation |
@@ -413,6 +418,7 @@
 | Gains Perpetual Attack | 🟡 High | Gains protocol attacks |
 
 ### **Identity/Naming Vectors**
+
 | Vector | Severity | Description |
 |--------|----------|-------------|
 | ENS Attack | 🟡 High | Ethereum Name Service exploitation |
@@ -422,6 +428,7 @@
 | Proof of Humanity Attack | 🟠 Medium | Proof of Humanity attacks |
 
 ### **Token Vesting Vectors**
+
 | Vector | Severity | Description |
 |--------|----------|-------------|
 | Linear Vesting Attack | 🟡 High | Linear vesting exploitation |
@@ -431,6 +438,7 @@
 | LlamaPay Stream Attack | 🟡 High | LlamaPay protocol attacks |
 
 ### **Mining Pool Vectors**
+
 | Vector | Severity | Description |
 |--------|----------|-------------|
 | EtherMine Attack | 🟡 High | EtherMine pool exploitation |
@@ -440,6 +448,7 @@
 | NanoPool Attack | 🟡 High | NanoPool exploitation |
 
 ### **Time-Based Attack Vectors**
+
 | Vector | Severity | Description |
 |--------|----------|-------------|
 | Time Manipulation Attack | 🟡 High | Timestamp manipulation |
@@ -451,6 +460,7 @@
 | Enhanced Time Manipulation with Admin Features | 🔴 Critical | Admin-enhanced time attacks |
 
 ### **Signature/Cryptographic Attack Vectors**
+
 | Vector | Severity | Description |
 |--------|----------|-------------|
 | Signature Replay Attack | 🟡 High | Signature reuse exploitation |
@@ -464,6 +474,7 @@
 | Merkle Proof Manipulation | 🟡 High | Merkle tree proof attacks |
 
 ### **Implementation/Proxy Attack Vectors**
+
 | Vector | Severity | Description |
 |--------|----------|-------------|
 | Malicious Implementation Attack | 🔴 Critical | Proxy implementation exploitation |
@@ -473,6 +484,7 @@
 | Unauthorized Upgrade Attack | 🔴 Critical | Unauthorized contract upgrades |
 
 ### **Layer 2 Specific Vectors**
+
 | Vector | Severity | Description |
 |--------|----------|-------------|
 | Optimism Fraud Proof Attack | 🔴 Critical | Optimism fraud proof exploitation |
@@ -484,6 +496,7 @@
 | Enhanced Fraud Proof Attack | 🔴 Critical | Advanced fraud proof attacks |
 
 ### **Event/History Manipulation Vectors**
+
 | Vector | Severity | Description |
 |--------|----------|-------------|
 | Fake Transaction History Creation | 🟡 High | Transaction history manipulation |
@@ -492,12 +505,14 @@
 | Enhanced Event Manipulation Attack | 🟡 High | Advanced event attacks |
 
 ### **Constructor/Initialization Vectors**
+
 | Vector | Severity | Description |
 |--------|----------|-------------|
 | Constructor Initialization Attack | 🟡 High | Constructor exploitation |
 | Enhanced Initialization Attack | 🟡 High | Advanced initialization attacks |
 
 ### **Advanced/Compound Vectors**
+
 | Vector | Severity | Description |
 |--------|----------|-------------|
 | Multi-Vector Simultaneous Attack | 🔴 Critical | Combined attack execution |
@@ -511,6 +526,7 @@
 | Complete Attack Suite Execution | 🔴 Critical | Full attack suite deployment |
 
 ### **Honeypot Mechanism Vectors**
+
 | Vector | Severity | Description |
 |--------|----------|-------------|
 | Honeypot Activation Trigger | 🟡 High | Honeypot trigger manipulation |
@@ -520,6 +536,7 @@
 | Exit Prevention Attack | 🟡 High | Exit mechanism blocking |
 
 ### **Specialized Token Vectors**
+
 | Vector | Severity | Description |
 |--------|----------|-------------|
 | Fee-on-Transfer Token Manipulation | 🟡 High | Fee-on-transfer exploitation |
@@ -530,6 +547,7 @@
 | Non-Standard Token Attack | 🟡 High | Non-standard ERC20 attacks |
 
 ### **Poison/Vanity Contract Vectors**
+
 | Vector | Severity | Description |
 |--------|----------|-------------|
 | Poison Contract Fake History | 🟠 Medium | Fake contract history creation |
@@ -537,6 +555,7 @@
 | Advanced Vanity Contract Attack | 🟡 High | Advanced vanity attacks |
 
 ### **VM/ZK Proof Vectors**
+
 | Vector | Severity | Description |
 |--------|----------|-------------|
 | ZK Proof Manipulation | 🟡 High | Zero-knowledge proof attacks |
@@ -549,6 +568,7 @@
 | Enhanced State Transition Attack | 🔴 Critical | Advanced state attacks |
 
 ### **Asset Lock/Bridge Vectors**
+
 | Vector | Severity | Description |
 |--------|----------|-------------|
 | Asset Lock Exploit | 🔴 Critical | Asset locking exploitation |
@@ -557,6 +577,7 @@
 | Enhanced Bridge Exploit | 🔴 Critical | Advanced bridge attacks |
 
 ### **Distraction/Stealth Vectors**
+
 | Vector | Severity | Description |
 |--------|----------|-------------|
 | Distraction Attack | 🟠 Medium | Attention distraction attacks |
@@ -564,12 +585,14 @@
 | Enhanced Distraction Attack | 🟡 High | Advanced distraction techniques |
 
 ### **Randomness/Entropy Vectors**
+
 | Vector | Severity | Description |
 |--------|----------|-------------|
 | Randomness Manipulation Attack | 🔴 Critical | Randomness source manipulation |
 | Enhanced Randomness Attack | 🔴 Critical | Advanced randomness exploitation |
 
 ### **Emergency/Orchestration Vectors**
+
 | Vector | Severity | Description |
 |--------|----------|-------------|
 | Ultimate Attack Orchestration | 🔴 Critical | Complete attack orchestration |
@@ -588,25 +611,4 @@
 - 🟢 **Low Severity**: 8 vectors (2.4%)
 - **Total**: 338 vectors
 
-### **Category Breakdown:**
-- **Core Mechanisms**: 22 vectors
-- **Cross-Chain & Bridges**: 17 vectors
-- **Flash Loan & MEV**: 19 vectors
-- **Access Control**: 17 vectors
-- **Liquidity Manipulation**: 13 vectors
-- **AI-Assisted (NEW)**: 8 vectors
-- **Layer 2 & Rollup (NEW)**: 10 vectors
-- **DeFi Protocol Specific**: 8 vectors
-- **Governance**: 8 vectors
-- **Oracle Manipulation**: 9 vectors
-- **Reentrancy**: 10 vectors
-- **Other Specialized**: 197 vectors
-
-### **Emerging Threat Categories (NEW - 53 vectors):**
-1. **AI-Assisted Attack Vectors** (8 vectors) - Machine learning exploitation
-2. **Layer 2 & Rollup Attack Vectors** (10 vectors) - L2 infrastructure attacks
-3. **Advanced Block Building Attack Vectors** (6 vectors) - PBS and MEV infrastructure
-4. **Intent-Based & Account Abstraction** (9 vectors) - EIP-4337 and intent protocols
-5. **Liquid Staking & Restaking** (8 vectors) - Staking derivative attacks
-6. **RWA Tokenization** (7 vectors) - Real-world asset attacks
-7. **Advanced Privacy & ZK** (5 vectors) - Privacy protocol exploitation
+---
